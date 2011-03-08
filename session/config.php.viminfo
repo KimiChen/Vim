@@ -1,0 +1,1230 @@
+# 这个 viminfo 文件是由 Vim 7.2 所产生。
+# 如果想要自行修改请特别小心！
+
+# Value of 'encoding' when this file was written
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 上个 Search 图案：
+~MSle0/syntax
+
+# 上个 Substitute Search 图案：
+~MSle0~&#
+
+# Last Substitute String:
+$
+
+# 命令行 历史记录 (从新到旧)：
+:w
+:tabedit
+:q
+:e gvims
+:e abc
+:e test
+:e SzTodo.vim
+:cd plugin
+:cd .vim
+:1,$s/#//
+:1,$s/#//g
+:cd .vimrc
+:!cwd ~/
+:cwd ~/
+:pwd .
+:pwd ~/
+:e ~/.vim/doc/example.taskpaper
+:help taskpaper
+:helptags ~/.vim/doc
+:set syntax=php
+:set syntax=todo
+:set syntax
+:set nohlsearch
+:set cst
+:'<,'>s/./.
+:e testTree.php
+:cw
+:vsplit
+:help cscope
+:cs show
+:cl
+:col
+:lol
+::q
+:lw
+:.cc
+:cope
+:lop
+:lli
+:clist
+:.cl!
+:lb
+:;b
+:lg
+:cg
+:cla
+:cn
+:cc 4
+:cc 3
+:cc 2
+:cc 1
+:cc
+:ll
+:cc 
+:cc!
+:qucickfix
+:cs help
+:cs find 0 category
+:cs find d category
+:cs find d
+:cs find g BaseAction
+:e ~/.vimrc
+:e .vimrc
+:Tlist
+:cs add cscope.out
+:wq
+:tag
+:cs find g value
+:q!
+:cs find d privacy
+:cs add ~/web/cscope.out
+:cs
+:cs f s privacy
+:cs find g privacy
+:cs find mind
+:cs find g mid
+:cs find g
+:cs find 1
+:cs 1
+:help ctags
+:!
+:Wq
+:W
+:'<,'>s/province/area/g
+:'<,'>s/province/city/g
+:1,$
+:e my_iframe1.js
+:'<,'>Q
+:split
+:myUrl
+:vi
+:s
+:;w
+:avatarreal
+:'<,'>s/school_name/school_in/g
+:'<,'>s/identity/school_name/g
+:e Reflection.php
+:slipt
+:wsplit
+:wvpist
+:wvipst
+:\
+:'<,'>s/\$firephp->/FB::/g
+:'<,'>s/\$firephp-\>/FB::/g
+:cs find s add
+:cs find s
+:cs 
+:Tag
+:TagList
+:tagList
+:"
+:'<,'>s/stu/tearcher/g
+:'<,'>s/stu/tearcher
+:'<,'>s/老师/同学
+:'<,'>s/学生/同学
+:'<,'>s/学生/老师
+:e upCourse.html
+:e 
+:weq
+:e course.html
+:'<,'>s/friend_list/friend_ary
+:'<,'>s/_POST/class
+:e TestAction.class.php
+:e xmlrpc.class.php
+:e function.php
+:e rpc_client.php
+:e rpc_server.php
+:e test.php
+:!mkdir soap
+:'<,'>s/my_teacher/same_class/g
+:Q
+:Taglist
+:s/[\u4e00-\u9fa5]/
+:'<,'>q
+:'<,'>s/\'/\"/g
+:'<,'>s/30/10/g
+:'<,'>s/ss/pp/g
+:sq
+:'<,'>s/助教/教授/g
+:'<,'>s/助教//g
+:'<,'>s/助教/副教授/g
+:'<,'>s/助教/讲师
+:e position.html
+:e pos
+:'<,'>s/course/department2
+:'<,'>s/PUBLIC/APP/g
+:'<,'>
+:"w
+:'<,'>s/course/c_list/
+:'<,'>s/\'/"/g
+:'<,'>s/\'/\"/
+:'<,'>s/\"/\'/g
+:e CourseClassModel.php
+:e UserTeacherCourseModel.php
+:e UserTeacherClassModel.php
+:e TeacherClassModel.php
+:e
+:'<,'>wq
+:ca
+:e UnicodeAnsi.js
+:set noarabic
+:set go+=mT
+:e base.php
+:pw
+:cd myLib
+:cd web
+:Lw
+:set noscrillbind
+:e web/suanfa.php
+:pwd
+:noscrillbind
+:vimdiff
+:help
+:'<,'>s/path/uid
+:'<,'>s/,/;
+:'<,'>s/=>/=/g
+:'<,'>s/=\>/=/g
+:i
+:增加登录判断
+:dd
+:'<,'>s/\/pmp\/bugadmin/\"\{\$Think\.const\.__ROOT__\}\"/g
+:'<,'>s/\/pmp\/bugadmin\
+:'<,'>s/charge/change/g
+:'<,'>s/dump/\$this-\>chargeCharge/g
+:'<,'>s/dump/\$this-\>chargeCharge\(\)/g
+:'<,'>s/project/test/g
+:'<,'>s/pro/project/g
+:'<,'>s/pro/test/g
+:'<,'>s/page/pro/g
+:!cp -R bugadmin/Tpl/default/Bug/css bugadmin/Tpl/default/Category/
+:!cp bugadmin/Tpl/default/Bug/css bugadmin/Tpl/default/Category/
+:'<,'>s/tr/td/g
+:findBug
+:1,$=
+:=1,$
+:e ~/web/pm/bugadmin/Tpl/default/Bug/index.html
+:!mv ~/web/pm/bugadmin/Tpl/default/Bug/index.html ~/web/pm/bugadmin/Tpl/default/Bug/show.html
+:e ~/web/pm/bugadmin/Tpl/default/User/addOne.html
+:e ~/web/pm/bugadmin/Tpl/default/Bug/findList.html
+:vsplit ~/web/pm/bugadmin/Tpl/default/Bug/find.html
+:'<,'>s/model/category/g
+:'<,'>s/model/category
+:vsplit ~/web/bugadmin/Tpl/default/Bug/add.html
+:v
+:'<,'>s/category/state/g
+:'<,'>s/category/project/g
+:'<,'>s/category/model/g
+:'<,'>s//model/g
+:'<,'>s/result/list/g
+:'<,'>s/pro/page/g
+:'<,'>s/static/public
+::
+:'<,'>s/=/=\>
+:'<,'>s/bug/user/g
+:e Tpl/default/User/admin.html
+:!mkdir Tpl/default/User
+:!mkdir Tpl/default/
+:!mv Lib/Action/UserAction.php Lib/Action/UserAction.class.php
+:mv Lib/Action/UserAction.php Lib/Action/UserAction.class.php
+:e Lib/Action/UserAction.php
+::w
+:'<,'>s/model/project/g
+:cd /home/sampeng/web/bugadmin/
+:'<,'>s/=/=\>/g
+:e Tpl/default/Index/category.html
+:e Tpl/default/Index/index.html
+:e Lib/Action/IndexAction.class.php
+:e Tpl/default/Category/category.html
+:e Tpl/default/Category/model.html
+:e Tpl/default/Category/project.html
+:split Lib/Action/CategoryAction.class.php
+:vsplit Tpl/default/Category/index.html
+:hel
+:!cd /home/sampeng/web/bugadmin/
+:!cd ~/web/bugadmin/
+:'<,'>s/model/project
+:'<,'>s/pinfo/minfo/g
+:'<,'>s/project/model/g
+:e bugadmin/Lib/Model/ProjectModel.class.php
+:!mv bugadmin/Tpl/default/Category/admin.html bugadmin/Tpl/default/Bug/admin.html
+:e bugadmin/Tpl/default/Category/admin.html
+:!cd ~/web/bugadmin/Tpl/default/
+:!cd ~/web/bugadmin/Tpl/default
+:!cd ~/web/bug/Tpl/Default
+:'<,'>s/page/project/g
+:e ~/web/bugadmin/Tpl/default/Category/index.html
+:!mv ~/web/bugadmin/Tpl/index.html ~/web/bugadmin/Tpl/default/Index/index.html
+:e ~/web/bugadmin/Tpl/index.html
+:e abc.php
+:ww
+:w:w
+:e ~/web/bugadmin/Tpl/default/Bug/defctInfo.html
+:e ~/web/bugadmin/Tpl/default/Bug/list.html
+:e Tpl/default/Bug/index.html
+:e Lib/Action/BugAction.class.php
+:'<,'>w
+:1,$s/[0-9]*\.//
+:1,$s/([0-9])*\.//
+:1,$s/([0-9])+\.//
+:1,$s/([0-9])?\.//
+:1,$s/[0-9]\.//
+:1,$s/[0-9]+\.//
+:1,$s/[0-9]?\.//
+:1,$s/[0-9][0-9]\.//
+:1,$s/[1-9]//
+:1,$s/[1-9]/""/
+:1,$s/^\[1-9\]/""/
+:1,$s/^[1-9]/""/
+:1,$s/^[1-9]?/""/
+:1,$s/^(\d+)/""/
+:1,$s/^\d/""/
+:1,$s/^d/""/
+:1,$s/^(d+)/""/
+:tabedit Common/select.js
+:e Tpl/default/Bug/add.html
+:!mkdir Tpl/default/Bug
+:e Tpl/default/Category/list.html
+:!pwd
+:cd ~/web/bugadmin/
+:wsign
+:sign
+:e ~/web/bugadmin/Tpl/default/Index/category.html
+:!mkdir ~/web/bugadmin/Tpl/default/Index/
+:w!
+:w !
+:Bp
+:tabedit ~/web/bugadmin/Conf/config.php
+:e ~/web/bugadmin/Lib/Action/BugAction.class.php
+:e ~/web/bugadmin/Lib/Model/LogModel.class.php
+:e ~/web/bugadmin/Lib/Model/SortingModel.class.php
+:e ~/web/bugadmin/Lib/Model/StateModel.class.php
+:e ~/web/bugadmin/Lib/Model/CategroyModel.class.php
+:e ~/web/bugadmin/Lib/Model/CategoryHasBugModel.class.php
+:e ~/web/bugadmin/Conf/config.php
+:cd myApp
+:e ~/web/test/myApp/index.php
+:tabedit ~/web/test1.php
+:tabedit ~/web/test.php
+:e ~/web/test1.php
+:'<,'>s/left/first
+:'<,'>s/left/right
+:e ~/web/test.php
+:1,$s/\'/"
+:1,$s/\]/'
+:1,$s/\[/'
+:1,$s/\\/'
+:1,$s/[/'
+:e ~/blog/test.php
+:e ~/web/blog/include1/Run_Time.php
+:TlistClose
+:TlistOpen
+:e ~/web/blog/include1/ORM/InterfaceSQL.php
+:! pwd
+:tabedit ~/web/blog/Pear_SQL.php
+:'<,'>s/\$\<array\>/\$aArray/
+:1,$s/\$\<key\>/\$aKey
+:1,$s/\$\<item\>/\$aItem/
+:'<,'>s/\$\(item\)/\$aItem/
+:'<,'>s/\$item/\$aItem/
+:next
+:args
+:!mkdir vim技巧
+:1,$s/“/\'
+:e ~/.muttrc
+:'<,'>s/\$\<par/\$aPar
+:'<,'>s/\$\<ac/\$aAc
+:tabedit ~/web/blog/test.php
+:w ~/web/test4.php
+:w ~/web/test3.php
+:w ~/web/test2.php
+:w ~/web/test1.php
+:'<,'>s/\$\<\>/\$aActive/
+:'<,'>s/\$\<active\>/\$aActive/
+:'<,'>s/\$\<view\>/\$aActive/
+:'<,'>s/\$\<view\>\<active\>/\$aActive/
+:'<,'>s/\$[\<view\>\<active\>]/\$aActive/
+:'<,'>s/\(\$\)[\<view\>\<active\>]/\1aActive/
+:'<,'>s/\(\$\)[\<view\>][\<active\>]/\1aActive/
+:'<,'>s/\$\<type\>/aType
+:'<,'>s/\$\<type\>/aType/
+:'<,'>s/\$\<view\>/aActive/
+:'<,'>s/\<view\>/aActive/
+:'<,'>s/\<\$view\>/aActive/
+:'<,'>s/view/aActive
+:47,79s/active/aActive/
+:1,$s/active/Active
+:1,$s/type/aType
+:s/.type/.aType
+:s/type/aType
+:s/type/aType/
+:s /type/aType/
+:s'<,'>
+:'<,'>/type/aType
+:filetype on
+:split ~/.vim/plugin/php.vim
+:e ~/.vims
+:tabedit ~/web/blog/include/Model_Base.php
+:tabedit ~/.vimrc
+:set filetype
+:Project
+:w ~/.vim/plugin/php.vim
+:e ~/.vim/plugin/php-doc.vim
+:diff
+:diff ~/.vim/plugin/php-doc.php
+:Phpcs
+:e ~/web/blog/include/Control/CotrolException.php
+:!ls ~/web/blog/include/
+:!ls .
+:ls ~/web/include
+:e ~/web/peartest.php
+:e ~/web/blog/include/Control/Control_main.php
+:Dn
+:Up
+:close
+:g
+:project
+:bp
+:python debugger_run()
+:python debug_run()
+:help xdebug
+:e ~/.vim/plugin/debugger.py
+:e /etc/php5/apache2/php.ini
+:tabedit /etc/apache2/apache2.conf
+:tabedit /etc/apache2/ports.conf
+:tabedit /etc/apache2/*.conf
+:tabedit /etc/apache2/*
+:e! ~/.vimprojects
+:e ~/.vimprojects
+:help project
+:tabedit ~/.vimprojects
+:tabedit ~/.vim
+:only
+:w! ~/.vim/doc/project.txt
+:w ~/.vim/doc/project.txt
+:cd ~/web/blog
+:!cd ~/web/blog
+:help svn
+:set modifiable=false
+:set modifiable
+:tabedit help
+
+# 查找字符串 历史记录 (从新到旧)：
+? #
+? $
+?  @done
+?/syntax
+?/web
+? .
+? \<BaseAction\>
+??\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?
+?/\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/
+?/tag
+? \([^;]\)$
+? province
+?/assign
+?/checkemail
+?/check
+? \Vscript\%#
+??install
+?/myUrl
+?/my_prefix
+?/fd
+?/fopen2
+? \V$_\%#
+?/getsite
+?/avatarreal
+?/random
+?/mksitekey
+?/dump
+? school_name
+? identity
+?/group
+?/短消息
+? \Vforeach\%#
+? \<objectFilters\>
+?/test3
+?/test
+?/is_instance_of
+?/info
+?/log
+?/jiami
+?/jami
+? \$firephp->
+? \$firephp-\>
+?/分享
+?/top
+? stu
+? 老师
+? 学生
+?/hidden
+? \Vup\%#
+? \Vdelete\%#
+?/getUser
+?/getUserNof
+?/通知
+?/get
+?/getUserNew
+?/UserInfo
+? \Vfor\%#
+? friend_list
+? _POST
+? \Vdoc_f\%#
+?/User
+?/status
+? \Vswitch\%#
+? \Vife\%#
+? \Vif\%#
+? my_teacher
+?/论坛
+?/space
+?/11
+?/reg_student
+?/student
+?/[\u4e00-\u9fa5]+
+?/[\u4e00-\u9fa5]/
+?/[\u4e00-\u9fa5]
+?/\[\u4e00-\u9fa5\]
+? \<notify_info\>
+?/ajaxminimy
+? \'
+? 30
+? ss
+? 助教
+?/encode
+? PUBLIC
+?/lw
+?/r950
+? \/\/\s*\(.*\)\s*$
+?/insert
+?/inset
+? course
+? \"
+?/;
+?/addFeed
+?/fetch
+?/parse
+?/p
+?/teacher
+?/teach
+?/list
+?/findList
+?/fi
+?/findBug
+? path
+? ,
+? =>
+? =\>
+??L
+??:w
+??Lw
+?/w
+? \/pmp\/bugadmin
+? \/pmp\/bugadmin\
+? charge
+? project
+? pro
+? page
+? tr
+? left
+?/man
+? model
+?/add
+?/admin
+? category
+? result
+?/i
+? static
+?/=
+? bug
+?/addB
+? pinfo
+?/HTML
+?/defct
+?/defctInfo
+?/State
+?/123
+?/showList
+?/index
+?/uid
+?/wenb
+? [0-9]*\.
+? ([0-9])*\.
+? ([0-9])+\.
+? ([0-9])?\.
+? [0-9]\.
+? [0-9]+\.
+? [0-9]?\.
+? [0-9][0-9]\.
+? [1-9]
+? ^\[1-9\]
+? ^[1-9]
+? ^[1-9]?
+? ^(\d+)
+? ^\d
+? ^d
+? ^(d+)
+?/AllowOverride
+? \<C\>
+?/C
+? ^\s*\(Returns\|See also\)\>
+?/*
+? \]
+? \[
+? \\
+? [/'
+??/
+?/set
+? \<tewn\>
+? \$\<array\>
+? \$\<key\>
+? \$\<item\>
+? \$\(item\)
+? \$item
+?/mailboxes
+?/mailboxe
+? ^\d\{3}ÿ
+? “
+?/connect
+? \$\<par
+? \$\<ac
+?/title
+? \$\<active\>
+? \$\<view\>
+? \$\<view\>\<active\>
+? \$[\<view\>\<active\>]
+? \(\$\)[\<view\>\<active\>]
+? \(\$\)[\<view\>][\<active\>]
+? \$\<type\>
+? \<view\>
+? \<\$view\>
+? view
+?/active
+? type
+? .type
+? <,
+?/filetype
+?/\<tab\>
+?/Tab
+?/\
+?/~
+?/include_path
+?/xdebug
+? ‐
+? ^\s*$
+?//`
+?/FVWM
+?/\$[FVWM_FONT]
+?/$[FVWM_FONT]
+?/Font
+?/FONT
+?/DestroyFunc BuildWallPaperMenu
+?/fvwm Window Operation Menu
+?/Programs Menu
+?/MenuStyles
+?/Menu Colorsets
+? \/\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+? \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+? \*\*\*
+?/host
+?/\~
+? \<rjaz\>
+?/-r
+?/pdf
+?/hardy
+? \<updates\>
+? \<clipboard\>
+? \<这仅在支持剪贴板的\>
+? \<版本中才能工作\>
+? \<关于剪贴板的更多内容请参见\>
+? \<\/TheLongFunctionName\>
+?/TheLongFunctionName
+? \<TheLongFunctionName\>
+?/php
+? vimtutor
+? wimtutor
+? \<月\>
+?/^The
+?//^The
+?/^the
+? \<nr\>
+?/^现在
+?/^匹配.
+?/${freedir}
+?/文泉
+?/include_
+? \<Include\>
+?/sites-en
+?/enable_tags
+?/js
+? \<set\>
+?/show
+?/action
+?/Pear
+?/min
+? ^.*\%29c
+?/get_my_params
+? td
+?/UserFace
+?/makeFriend
+?/addFriend
+?/inviter
+?/确认
+?/好友
+?/mk
+?/cc:wq
+?/feed
+?/getUserFriends
+? \<p\>
+?/h_msn
+? \<tempFile\>
+? \Vdoc_v\%#
+? \Vdoc_s\%#
+? \Vdoc_i\%#
+? \Vclass\%#
+? \Vdef?\%#
+? \Vdef\%#
+? \Vt\%#
+? \Vdo\%#
+? \Vcase\%#
+? \Vahref\%#
+?/feeds
+? \Vinput\%#
+?/progress
+? \Vnbs\%#
+? \Vlabel\%#
+?/my
+?/my_site
+?/mksite
+?/app
+?/ac
+?/id
+?/avat
+? \<bin\>
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+@for
+@1
+@/Model/
+@a
+
+# 输入行 历史记录 (从新到旧)：
+
+# 寄存器:
+"0	LINE	0
+	                <a href="###" onclick="addCompany(2)">继续添加公司</a>
+""1	LINE	0
+	}
+"2	LINE	0
+	vim: ft=todolist
+	{
+	
+"3	LINE	0
+	 let  g:sztodo_db_path="/root/.vim/todo"  
+	 let  s:list_type="unfinished"  
+	 let  s:cur_buf = 0  
+	   
+	 function! MakeTemplate()   
+	 python << EOF  
+	 import vim     
+	   
+	 vim.command("call SwitchToDetailView()")  
+	 vim.command("call SetSyntax()")  
+	 template = "=" * 50 + "\n" \  
+	       + "tag:" +"\n" \  
+	       + "title:" +  "\n" \  
+	       + "=" * 50 + "\n"   
+	 for index,line in enumerate(template.split("\n")):  
+	   if index ==0 :  
+	     vim.current.buffer[0]=line  
+	   else :  
+	     vim.current.buffer.append(line)  
+	   
+	 EOF  
+	 endfunction  
+	   
+	 function! SaveTodoItem()  
+	 python << EOF  
+	 import vim     
+	   
+	 def loadData(lines):  
+	   item=ToDoItem()  
+	   content=""  
+	   seperates=0  
+	   for line in lines:  
+	     if line.startswith("====="): seperates=seperates+1  
+	     if line.startswith("id:"): item.id=line[3:].strip()  
+	     if line.startswith("tag:"): item.tag=line[4:].strip()  
+	     if line.startswith("title:"): item.title=line[6:].strip()  
+	     if line.startswith("status:"): item.status=line[7:].strip()  
+	     if seperates==2 and not line.startswith("===="):  
+	       content=content+line+"\n"  
+	   item.content=content[:-1]  
+	   return item  
+	   
+	 def addItem(item):  
+	   insertSql="insert into SzTodo(tag,title,create_date,status,content) values (?,?,?,?,?)"  
+	   con=sqlite.connect(getDbFileName())  
+	   cur=con.cursor()  
+	   values=(item.tag,item.title,item.create_date,item.status,item.content)  
+	   cur.execute(insertSql,values)  
+	   con.commit()  
+	   con.close()  
+"4	LINE	0
+	
+"5	LINE	0
+	 * @tag
+"6	LINE	0
+	
+"7	LINE	0
+	 * TODO 
+"8	LINE	0
+	/**
+	 * AccountAction 
+	 * 
+	 * @uses BaseAction
+	 * @package 
+	 * @version $id$
+	 * @copyright 2009-2011 SamPeng 
+	 * @author SamPeng <sampeng87@gmail.com> 
+	 * @license PHP Version 5.2 {@link www.sampeng.cn}
+	 */
+"9	LINE	0
+	
+"a	LINE	0
+	^i#include "$a�kb~~~~�kb�kb�kb�kl�kl"j
+	        $table_name = "post";
+	
+	        if($simple == TRUE){
+	            //只有一种查询字段
+	            if ( is_string($array) || count($array) == "1" ){
+	                $sql = "SELECT * 
+	                    FROM $table_name
+	                    WHERE ?";
+	
+	                $this->sql_result = self::$Database->query($sql,$array);
+	
+	                $this->checkError($this->sql_result);
+	                return TRUE;
+	            }else{
+	                if (count($array) == "2" && is_array($array[option] && is_array($array[tewn]))){
+	                    $this->arrayWalk(array[option],$this->selectOption());
+	                    $this->arrayWalk($array[tewn],$this->selectTewn());
+	
+	                    $sql_option = $this->sql_select_option;
+	                    $sql_tewm   = $this->sql_select_tewn;
+	
+	                    $sql_select = "
+	                        SELECT $sql_tewm[select]  
+	                        FROM   $table_name
+	                        WHERE  $sql_tewm[where]
+	                        ";
+	
+	                    $this->sql_result = self::$Database->query($sql);
+	                    $this->checkError($this->sql_result);
+	                    return TRUE;
+	                }else{
+	                    throw new ModelException("错误的查询格式");
+	                }
+	            }
+"b	LINE	0
+	        $item      = strtolower($item);
+	        $key       = strtolower($key);
+	        $temparray = array("all","one","row","col","assoc");
+	
+	        //判断是否是默认的查询方法
+	        if (in_array($key,$temparray) && !is_array($item)){
+	            $this->sql_select_option = "get".$key.":".$itme;
+	            return;
+	        }else{
+	            //如果采用新的查询方法。$item是一个数组。内容为新的方法名。序列化后赋值给sql_select_option变量。
+	            $temp = serialize($item);
+	            $this->sql_select_option = "getOther".":".$temp;
+	            return;
+	        }
+"c	LINE	0
+	        $item = strtolower($item);
+	        $key  = strtolower($key);
+	
+	        foreach ($item as $key => $value){
+	            switch ($key) {
+	            case "select":
+	                $this->sql_select_tewn['select'] = $this->forTewn($value);
+	                continue;
+	            case "where":
+	                $this->sql_select_tewn['where'] = $thie->forTewn($value);
+	                continue;
+	            default :
+	                throw new ModelException("只能是select和where语句");
+	            }
+	        }
+	        return TRUE;
+	    private function selectTewn($item,$key){
+	        $item = strtolower($item);
+	        $key  = strtolower($key);
+	
+	        foreach ($item as $key => $value){
+	            switch ($key) {
+	            case "select":
+	                $this->sql_select_tewn['select'] = $this->forTewn($value);
+	                continue;
+	            case "where":
+	                $this->sql_select_tewn['where'] = $thie->forTewn($value);
+	                continue;
+	            default :
+	                throw new ModelException("只能是select和where语句");
+	            }
+	        }
+	        return TRUE;
+	    }
+	   private function selectTewn($item,$key){
+	        $item = strtolower($item);
+	        $key  = strtolower($key);
+	
+	        foreach ($item as $key => $value){
+	            switch ($key) {
+	            case "select":
+	                $this->sql_select_tewn['select'] = $this->forTewn($value);
+	                continue;
+	            case "where":
+	                $this->sql_select_tewn['where'] = $thie->forTewn($value);
+	                continue;
+	            default :
+	                throw new ModelException("只能是select和where语句");
+	            }
+	        }
+"d	LINE	0
+	        $tempstr = array();  //临时数组
+	        foreach ($value as $temp){
+	            if ($this->isArray($temp),FALSE){
+	                $tempstr[] = implode (" ",$temp);
+	            }else{
+	                $tempstr[] = $temp;  
+	            }
+	        }
+	        $tempstr = implode(",",$tempstr);
+	        return $tempstr;
+	    private function selectTewn($item,$key){
+	        $item = strtolower($item);
+	        $key  = strtolower($key);
+	
+	        foreach ($item as $key => $value){
+	            switch ($key) {
+	            case "select":
+	                $this->sql_select_tewn['select'] = $this->forTewn($value);
+	                continue;
+	            case "where":
+	                $this->sql_select_tewn['where'] = $thie->forTewn($value);
+	                continue;
+	            default :
+	                throw new ModelException("只能是select和where语句");
+	            }
+	        }
+	        return TRUE;
+	    }
+	
+"e	CHAR	0
+	F".
+"f	LINE	0
+	当你需要拷贝一个文件的几个地方到另一个文件，用上面的方法，你就得反复在两个文件
+	间跳来跳去。要避免这种情况，你可以把不同的文本拷贝到不同的寄存器中。
+	    寄存器是 Vim 用来保存文本的地方。这里我们使用名称为 a 到 z 的寄存器 (后面
+	我们会发现还有其它寄存器)。让我们拷贝一个句子到 f 寄存器 (f 表示 First)：
+	>
+		"fyas
+"i	CHAR	0
+	"
+"k	CHAR	0
+	jdfnnn�k5��a��` ��,��.��5��,��.��,��.��,��.
+"l	LINE	0
+	我们会发现还有其它寄存器)。让我们拷贝一个句子到 f 寄存器 (f 表示 First)：
+	>
+		"fyas
+	
+"q	CHAR	0
+	:q:�kbw
+"s	LINE	0
+	        $item      = strtolower($item);
+	        $key       = strtolower($key);
+	        $temparray = array("all","one","row","col","assoc");
+	
+	        //判断是否是默认的查询方法
+	        if (in_array($key,$temparray) && !is_array($item)){
+	            $this->sql_select_option = "get".$key.":".$itme;
+	            return;
+	        }else{
+	            //如果采用新的查询方法。$item是一个数组。内容为新的方法名。序列化后赋值给sql_select_option变量。
+	            $temp = serialize($item);
+	            $this->sql_select_option = "getOther".":".$temp;
+	            return;
+	        }
+"t	CHAR	0
+	i"�kb
+"u	CHAR	0
+	
+"w	CHAR	0
+	f;a
+"y	LINE	0
+	  <refname>fopen</refname>
+"z	LINE	0
+	            switch ($type){
+	                case "m":
+	                    $modefile = "include/Model/Model_".$active.".php";
+	
+	                    if (file_exists( $modefile )){
+	                        include_once($modefile);
+	
+	                        $this->model_ref = new $model; 
+	                    } else {
+	                        throw new ControlException ($modefile."are not Dir or File"); 
+	                    } 
+	                    break; 
+	                case "v":
+	                    $viewfile = "View/View_".$view.".php";
+	                    if (file_exists( $viewfile )) {
+	                        include_once( $viewfile );
+	
+	                        $this->view_ref = new $view;
+	                    } else {
+	                        throw new ControlException ($viewfile."not are Dir or File"); 
+"-	CHAR	0
+	.
+
+# 文件标记:
+'A  203  18  ~/web/project_jiaoshi/SNS/Tpl/default/Account/basic.html
+'H  328  9  ~/.vim/doc/usr_07.cnx
+'I  64  24  ~/web/project_jiaoshi/SNS/Lib/Action/FriendAction.class.php
+'M  48  11  ~/web/blog/include/Control/Control_main.php
+'R  43  43  ~/web/project_jiaoshi/SNS/Tpl/default/Public/reg_student2.html
+'S  78  5  ~/web/blog/include1/ORM/SimpleORM.php
+'Z  76  18  ~/web/blog/include/Model_Base.php
+'0  10  24  ~/web/project_jiaoshi/SNS/Conf/config.php
+'1  6  1  ~/gvims
+'2  254  0  ~/.vimrc
+'3  96  0  ~/.vim/plugin/tasklist.vim
+'4  1  0  ~/abc
+'5  1  0  ~/vim
+'6  9  0  ~/.vimrc
+'7  90  59  ~/.vim/plugin/SzTodo.vim
+'8  125  4  ~/.vim/plugin/SzTodo.vim
+'9  1  0  ~/SzTodo.vim
+
+# 跳转列表 (从新到旧):
+-'  10  24  ~/web/project_jiaoshi/SNS/Conf/config.php
+-'  1  0  ~/web/project_jiaoshi/SNS/Conf/config.php
+-'  6  1  ~/gvims
+-'  1  0  ~/gvims
+-'  254  0  ~/.vimrc
+-'  39  4  ~/__Tag_List__
+-'  3  0  ~/__Tag_List__
+-'  2  0  ~/__Tag_List__
+-'  1  0  ~/.vimrc
+-'  96  0  ~/.vim/plugin/tasklist.vim
+-'  17  4  ~/.vim/plugin/__Tag_List__
+-'  3  0  ~/.vim/plugin/__Tag_List__
+-'  2  0  ~/.vim/plugin/__Tag_List__
+-'  1  0  ~/.vim/plugin/tasklist.vim
+-'  1  0  ~/abc
+-'  1  0  ~/vim
+-'  9  0  ~/.vimrc
+-'  42  0  ~/__Tag_List__
+-'  41  0  ~/__Tag_List__
+-'  90  59  ~/.vim/plugin/SzTodo.vim
+-'  1  0  ~/.vim/plugin/SzTodo.vim
+-'  125  4  ~/.vim/plugin/SzTodo.vim
+-'  293  42  ~/.vim/plugin/SzTodo.vim
+-'  294  1  ~/.vim/plugin/SzTodo.vim
+-'  1  0  ~/SzTodo.vim
+-'  7  0  ~/.vim/plugin/NERD_tree.vim
+-'  1  7  ~/.vim/doc/NERD_tree_1
+-'  142  0  ~/.vim/doc/NERD_tree_1
+-'  1  0  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  4  6  ~/web/myLib/suanfa/base.php
+-'  1  0  ~/web/myLib/suanfa/base.php
+-'  28  0  ~/.vimrc
+-'  26  9  ~/.vimrc
+-'  27  1  ~/.vimrc
+-'  14  0  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  1  0  ~/web/project_jiaoshi/SNS/Common/common.php
+-'  721  3  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  810  0  ~/NERD_tree_1
+-'  1  0  ~/web/testTree.php
+-'  154  1  ~/web/project_jiaoshi/Admin/Lib/Action/AlbumAction.class.php
+-'  2  29  ~/web/project_jiaoshi/Admin/Lib/Action/AlbumAction.class.php
+-'  813  0  ~/NERD_tree_1
+-'  814  0  ~/NERD_tree_1
+-'  77  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  86  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  1  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  7  6  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  5  1  ~/web/tp/Examples/Route/Lib/Action/BlogAction.class.php
+-'  19  1  ~/web/thinkSNS/Admin/Lib/Action/ReadAction.class.php
+-'  213  4  ~/web/project/bugadmin/Lib/Action/CategoryAction.class.php
+-'  54  4  ~/web/pm/bugadmin/Lib/Action/IndexAction.class.php
+-'  276  4  ~/web/pm/bugadmin/Lib/Action/CategoryAction.class.php
+-'  26  4  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  77  1  ~/web/project/bugadmin/Lib/Action/BugAction.class.php
+-'  48  4  ~/web/project/bugadmin/Lib/Action/IndexAction.class.php
+-'  29  1  ~/web/thinkSNS/Admin/Lib/Action/ReadAction.class.php
+-'  46  4  ~/web/project/bugadmin/Lib/Action/IndexAction.class.php
+-'  23  3  ~/web/project/bugadmin/Lib/Action/BugAction.class.php
+-'  190  4  ~/web/tp/Examples/Blog/Lib/Action/BlogAction.class.php
+-'  19  1  ~/web/project_jiaoshi/Admin/Lib/Action/ReadAction.class.php
+-'  43  4  ~/web/project/bugadmin/Lib/Action/IndexAction.class.php
+-'  8  11  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  24  23  ~/web/project/bugadmin/Lib/Action/BugAction.class.php
+-'  525  7  ~/web/pm/bugadmin/Public/Pear/data/PhpDocumentor/docbuilder/config.php
+-'  527  5  ~/web/pm/bugadmin/Public/Pear/data/PhpDocumentor/docbuilder/config.php
+-'  55  0  ~/web/pm/bugadmin/Public/Pear/data/PhpDocumentor/docbuilder/actions.php
+-'  179  16  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  15  0  ~/web/jquery-autocomplete/demo/index.html
+-'  175  16  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  215  21  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  5  13  ~/web/project_jiaoshi/Admin/Lib/Action/AlbumAction.class.php
+-'  86  18  ~/web/pm/bugadmin/Public/Pear/docs/HTML_Progress/docs/TDG/HTML_Progress/tutorial_part2-progresshandler.pkg.html
+-'  14  15  ~/web/pannel.tpl.php
+-'  16  2  ~/web/pannel.tpl.php
+-'  25  1  ~/web/index.php
+-'  120  2  ~/web/cscope.out
+-'  1  0  ~/web/cscope.out
+-'  1  0  ~/web/cscope
+-'  72  1  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  3  27  ~/web/project_jiaoshi/SNS/Common/common.php
+-'  63  1  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  7  0  ~/.vim/plugin/NERD_tree.vim
+-'  1  7  ~/.vim/doc/NERD_tree_1
+-'  142  0  ~/.vim/doc/NERD_tree_1
+-'  1  0  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  4  6  ~/web/myLib/suanfa/base.php
+-'  1  0  ~/web/myLib/suanfa/base.php
+-'  14  0  ~/web/project_jiaoshi/SNS/Lib/Action/AccountAction.class.php
+-'  1  0  ~/web/project_jiaoshi/SNS/Common/common.php
+-'  1  0  ~/web/testTree.php
+-'  154  1  ~/web/project_jiaoshi/Admin/Lib/Action/AlbumAction.class.php
+-'  2  29  ~/web/project_jiaoshi/Admin/Lib/Action/AlbumAction.class.php
+-'  77  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  86  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  1  0  ~/web/project_jiaoshi/NERD_tree_1
+-'  7  6  ~/web/pm/bugadmin/Lib/Action/BugAction.class.php
+-'  5  1  ~/web/tp/Examples/Route/Lib/Action/BlogAction.class.php
+
+# 文件内的标记历史记录 (从新到旧):
+
+> ~/web/project_jiaoshi/SNS/Conf/config.php
+	"	10	24
+
+> ~/NERD_tree_1
+	"	84	15
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0

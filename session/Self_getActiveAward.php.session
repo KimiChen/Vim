@@ -1,0 +1,733 @@
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:cpo_save=&cpo
+set cpo&vim
+imap <D-BS> 
+imap <M-BS> 
+imap <M-Down> }
+inoremap <D-Down> <C-End>
+imap <M-Up> {
+inoremap <D-Up> <C-Home>
+noremap! <M-Right> <C-Right>
+noremap! <D-Right> <End>
+noremap! <M-Left> <C-Left>
+noremap! <D-Left> <Home>
+imap <S-Tab> 
+inoremap <C-Tab> 	
+imap <silent> <Plug>IMAP_JumpBack =IMAP_Jumpfunc('b', 0)
+imap <silent> <Plug>IMAP_JumpForward =IMAP_Jumpfunc('', 0)
+imap <F9> :InsPrevHita
+imap <F8> :InsNextHita
+imap <F5> :PreviewClassa
+map! <D-v> *
+vnoremap  :call PhpAlign()
+vnoremap <silent>  :call RangeCommentLine()
+nnoremap <silent>  :call CommentLine()
+onoremap <silent>  :call CommentLine()
+snoremap <silent> 	 i<Right>=TriggerSnippet()
+vmap <NL> <Plug>IMAP_JumpForward
+nmap <NL> <Plug>IMAP_JumpForward
+vnoremap  :call PhpDocRange()
+nnoremap  :call PhpDocSingle()
+vnoremap <silent>  :call RangeUnCommentLine()
+nnoremap <silent>  :call UnCommentLine()
+onoremap <silent>  :call UnCommentLine()
+snoremap ' b<BS>'
+xnoremap ' "zdi'z'
+vnoremap ( "zdi(z)
+noremap ; :s/\([^;]\)$/\1;/
+imap ê <RightMouse>a
+imap ì :BuildMenu<RightMouse>a
+nmap K <Plug>ManPageView
+vnoremap [ "zdi[z]
+nmap <silent> \cv <Plug>VCSVimDiff
+nmap <silent> \cu <Plug>VCSUpdate
+nmap <silent> \cU <Plug>VCSUnlock
+nmap <silent> \cs <Plug>VCSStatus
+nmap <silent> \cr <Plug>VCSReview
+nmap <silent> \cq <Plug>VCSRevert
+nmap <silent> \cn <Plug>VCSAnnotate
+nmap <silent> \cl <Plug>VCSLog
+nmap <silent> \cL <Plug>VCSLock
+nmap <silent> \ci <Plug>VCSInfo
+nmap <silent> \cg <Plug>VCSGotoOriginal
+nmap <silent> \cG <Plug>VCSClearAndGotoOriginal
+nmap <silent> \cd <Plug>VCSDiff
+nmap <silent> \cD <Plug>VCSDelete
+nmap <silent> \cc <Plug>VCSCommit
+nmap <silent> \ca <Plug>VCSAdd
+map \t <Plug>TaskList
+nmap <silent> \ucs :call C_RemoveGuiMenus()
+nmap <silent> \lcs :call C_CreateGuiMenus()
+nmap <silent> \bv :VSBufExplorer
+nmap <silent> \bs :HSBufExplorer
+nmap <silent> \be :BufExplorer
+nnoremap \bn :BlogNew
+nnoremap \bse :BlogSend
+nnoremap \bl :BlogList
+vnoremap \ps :call PhpDocClass()
+vnoremap \pd :call PhpDocRange()
+nnoremap \pd :call PhpDocSingle()
+nmap <silent> \lk <Plug>LookupFile
+nmap <silent> \lw :LUWalk
+nmap <silent> \lU :LUBufs            
+map \ph :!phpcs -l %
+nmap gx <Plug>NetrwBrowseX
+vnoremap { "zdi{z}
+map <M-Down> }
+noremap <D-Down> <C-End>
+map <M-Up> {
+noremap <D-Up> <C-Home>
+noremap <M-Right> <C-Right>
+noremap <D-Right> <End>
+noremap <M-Left> <C-Left>
+noremap <D-Left> <Home>
+snoremap <Left> bi
+snoremap <Right> a
+snoremap <BS> b<BS>
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
+nnoremap <silent> <Plug>CVSWatchRemove :CVSWatch remove
+nnoremap <silent> <Plug>CVSWatchOn :CVSWatch on
+nnoremap <silent> <Plug>CVSWatchOff :CVSWatch off
+nnoremap <silent> <Plug>CVSWatchAdd :CVSWatch add
+nnoremap <silent> <Plug>CVSWatchers :CVSWatchers
+nnoremap <silent> <Plug>CVSUnedit :CVSUnedit
+nnoremap <silent> <Plug>CVSEditors :CVSEditors
+nnoremap <silent> <Plug>CVSEdit :CVSEdit
+nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff
+nnoremap <silent> <Plug>VCSUpdate :VCSUpdate
+nnoremap <silent> <Plug>VCSUnlock :VCSUnlock
+nnoremap <silent> <Plug>VCSStatus :VCSStatus
+nnoremap <silent> <Plug>VCSReview :VCSReview
+nnoremap <silent> <Plug>VCSRevert :VCSRevert
+nnoremap <silent> <Plug>VCSLog :VCSLog
+nnoremap <silent> <Plug>VCSLock :VCSLock
+nnoremap <silent> <Plug>VCSInfo :VCSInfo
+nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!
+nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal
+nnoremap <silent> <Plug>VCSDiff :VCSDiff
+nnoremap <silent> <Plug>VCSDelete :VCSDelete
+nnoremap <silent> <Plug>VCSCommit :VCSCommit
+nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate
+nnoremap <silent> <Plug>VCSAdd :VCSAdd
+vmap <silent> <Plug>IMAP_JumpBack `<i=IMAP_Jumpfunc('b', 0)
+vmap <silent> <Plug>IMAP_JumpForward i=IMAP_Jumpfunc('', 0)
+vmap <silent> <Plug>IMAP_DeleteAndJumpBack "_<Del>i=IMAP_Jumpfunc('b', 0)
+vmap <silent> <Plug>IMAP_DeleteAndJumpForward "_<Del>i=IMAP_Jumpfunc('', 0)
+nmap <silent> <Plug>IMAP_JumpBack i=IMAP_Jumpfunc('b', 0)
+nmap <silent> <Plug>IMAP_JumpForward i=IMAP_Jumpfunc('', 0)
+map <S-F8> :NextInBlock
+map <S-F9> :PrevInBlock
+noremap <F5> :CheckSyntax
+map <F11> :Tlist
+map <F10> :NERDTreeToggle
+noremap <silent> <F8> Tlist
+nmap <Nul>d :cs find d =expand("<cword>")
+nmap <Nul>i :cs find i ^=expand("<cfile>")$
+nmap <Nul>f :cs find f =expand("<cfile>")
+nmap <Nul>e :cs find e =expand("<cword>")
+nmap <Nul>t :cs find t =expand("<cword>")
+nmap <Nul>c :cs find c =expand("<cword>")
+nmap <Nul>g :cs find g =expand("<cword>")
+nmap <Nul>s :cs find s =expand("<cword>")
+map <S-Tab> :bp
+map <C-Tab> :bn
+xmap <BS> "-d
+vmap <D-x> "*d
+vmap <D-c> "*y
+vmap <D-v> "-d"*P
+nmap <D-v> "*P
+inoremap  :!phpm =expand("<cword>")
+inoremap 	 =InsertTabWrapper()
+imap <NL> <Plug>IMAP_JumpForward
+imap  =CtrlXPP()
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap ( (  )<Left><Left>
+map ° :call BufPos_ActivateBuffer(10)
+map ¹ :call BufPos_ActivateBuffer(9)
+map ¸ :call BufPos_ActivateBuffer(8)
+map · :call BufPos_ActivateBuffer(7)
+map ¶ :call BufPos_ActivateBuffer(6)
+map µ :call BufPos_ActivateBuffer(5)
+map ´ :call BufPos_ActivateBuffer(4)
+map ³ :call BufPos_ActivateBuffer(3)
+map ² :call BufPos_ActivateBuffer(2)
+map ± :call BufPos_ActivateBuffer(1)
+inoremap [ []<Left>
+inoremap \pd :call PhpDocSingle()i
+imap <silent> <expr> \lk (pumvisible()?”\”:”").”\\<Plug>LookupFile”
+inoremap { {}O
+abbr requirefb require_once( 'FirePHPCore/fb.php' );
+abbr requirefc require_once('FirePHPCore/FirePHP.class.php');
+abbr sammail <sampeng87@gmail.com>
+let &cpo=s:cpo_save
+unlet s:cpo_save
+set autoindent
+set autoread
+set background=dark
+set backspace=start,indent,eol
+set cindent
+set cmdheight=2
+set complete=.,w,b,u,t,i,k
+set cscopeprg=/usr/bin/cscope
+set cscopequickfix=s-,g-,c-,d-,t-,e-,f-,i-
+set cscopetag
+set cscopeverbose
+set dictionary=~/.vim/funclist.txt
+set expandtab
+set fileencodings=ucs-bom,utf-8,default,latin1
+set grepprg=grep\ -nH\ $*
+set guifont=Consolas:h12
+set guioptions=egmrLt
+set guitablabel=%M%t
+set helplang=cn
+set hidden
+set hlsearch
+set incsearch
+set langmenu=none
+set lazyredraw
+set matchtime=4
+set mouse=a
+set mousemodel=popup
+set omnifunc=phpcomplete#CompletePHP
+set printexpr=system('open\ -a\ Preview\ '.v:fname_in)\ +\ v:shell_error
+set shiftwidth=2
+set showmatch
+set smartindent
+set smarttab
+set noswapfile
+set termencoding=utf-8
+set updatetime=100
+set nowritebackup
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+cd ~/
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+badd +0 ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_getSetting.php
+badd +0 ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_checkRef.php
+badd +0 ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_farmSetting.php
+badd +0 ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_getActiveAward.php
+silent! argdel *
+edit ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_getSetting.php
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+nnoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <buffer> <silent> < <><Left>
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i,k
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'php'
+setlocal filetype=php
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=qrowcb
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=\\(require\\|include\\)\\(_once\\)\\?
+setlocal includeexpr=
+setlocal indentexpr=GetPhpIndent()
+setlocal indentkeys=0{,0},0),:,!^F,o,O,e,*<Return>,=?>,=<?,=*/
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255,$
+setlocal keywordprg=
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal nomacmeta
+setlocal makeprg=php-5.2\ -l\ %
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=phpcomplete#CompletePHP
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'php'
+setlocal syntax=php
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 9 - ((8 * winheight(0) + 25) / 50)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+9
+normal! 0
+tabedit ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_checkRef.php
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+nnoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <buffer> <silent> < <><Left>
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i,k
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'php'
+setlocal filetype=php
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=qrowcb
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=\\(require\\|include\\)\\(_once\\)\\?
+setlocal includeexpr=
+setlocal indentexpr=GetPhpIndent()
+setlocal indentkeys=0{,0},0),:,!^F,o,O,e,*<Return>,=?>,=<?,=*/
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255,$
+setlocal keywordprg=
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal nomacmeta
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=phpcomplete#CompletePHP
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'php'
+setlocal syntax=php
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 1 - ((0 * winheight(0) + 25) / 50)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+tabedit ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_farmSetting.php
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+nnoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <buffer> <silent> < <><Left>
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i,k
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'php'
+setlocal filetype=php
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=qrowcb
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=\\(require\\|include\\)\\(_once\\)\\?
+setlocal includeexpr=
+setlocal indentexpr=GetPhpIndent()
+setlocal indentkeys=0{,0},0),:,!^F,o,O,e,*<Return>,=?>,=<?,=*/
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255,$
+setlocal keywordprg=
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal nomacmeta
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=phpcomplete#CompletePHP
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'php'
+setlocal syntax=php
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 1 - ((0 * winheight(0) + 25) / 50)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+tabedit ~/Sites/Work/NinjaVillage/tag_new/object/User/Self/Self_getActiveAward.php
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+onoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+nnoremap <buffer> <silent> [[ ?\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)?:nohls
+onoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+nnoremap <buffer> <silent> ]] /\(.*\%#\)\@!\_^\s*\zs\(\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\|\(abstract\s\+\|final\s\+\)*class\|interface\)/:nohls
+let s:cpo_save=&cpo
+set cpo&vim
+inoremap <buffer> <silent> < <><Left>
+let &cpo=s:cpo_save
+unlet s:cpo_save
+setlocal keymap=
+setlocal noarabic
+setlocal noautoindent
+setlocal balloonexpr=
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=s1:/*,mb:*,ex:*/,://,:#
+setlocal commentstring=/*%s*/
+setlocal complete=.,w,b,u,t,i,k
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'php'
+setlocal filetype=php
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+set foldmethod=syntax
+setlocal foldmethod=syntax
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=qrowcb
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=2
+setlocal imsearch=2
+setlocal include=\\(require\\|include\\)\\(_once\\)\\?
+setlocal includeexpr=
+setlocal indentexpr=GetPhpIndent()
+setlocal indentkeys=0{,0},0),:,!^F,o,O,e,*<Return>,=?>,=<?,=*/
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255,$
+setlocal keywordprg=
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal nomacmeta
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:],<:>
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=phpcomplete#CompletePHP
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=
+setlocal suffixesadd=
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'php'
+setlocal syntax=php
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 61 - ((60 * winheight(0) + 25) / 50)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+61
+normal! 0
+tabnext 4
+if exists('s:wipebuf')
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToO
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :
