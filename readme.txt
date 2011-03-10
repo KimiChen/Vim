@@ -8,3 +8,12 @@ sudo make install
 cd ..
 rm -Rf ./ctags-5.8*
 sudo cp /usr/local/bin/ctags /usr/bin/ctags
+
+
+
+git clone git@github.com:KimiChen/Vim.git .vim/
+git config --global user.name "Kimi"
+git config --global user.email "jianxieshui|*|gmail.com"
+git remote add origin git@github.com:KimiChen/Vim.git
+git pull git@github.com:KimiChen/Vim.git
+git push origin master
