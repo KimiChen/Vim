@@ -611,7 +611,7 @@ map <leader>f :MRU<CR>
 " => Other plugin
 " 其他插件设置
 """"""""""""""""""""""""""""""
-let g:yankring_history_dir = '~/.vim/tempfiledir/'
+let g:yankring_history_dir = '~/.vim/tempfiledir'
 
 """"""""""""""""""""""""""""""
 " => Command-T
