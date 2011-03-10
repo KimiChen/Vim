@@ -181,7 +181,7 @@ try
     if MySys() == "windows"
       set undodir=C:\Windows\Temp
     else
-      set undodir=~/.vim/undodir
+      set undodir=~/.vim/tempfiledir
     endif
     
     set undofile
@@ -607,6 +607,11 @@ endfunction
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
 
+""""""""""""""""""""""""""""""
+" => Other plugin
+" 其他插件设置
+""""""""""""""""""""""""""""""
+let g:yankring_history_dir = '~/.vim/tempfiledir/'
 
 """"""""""""""""""""""""""""""
 " => Command-T
