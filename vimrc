@@ -45,7 +45,7 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc
 " VIM 用户界面设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the curors - when moving vertical..
-set so=7
+set so=10
 
 " Trun on Wild menu
 " wildmenu' 打开时，命令行补全以增强模式运行。按下 'wildchar' ( 通常是<Tab>) 启动补全。
@@ -337,8 +337,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Close the current buffer
-map <leader>bd :Bclose<cr>
 
 " Close all the buffers
 map <leader>ba :1,300 bd!<cr>
@@ -482,27 +480,25 @@ map <leader>p :cp<cr>
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
-map <leader>o :BufExplorer<cr>
+let g:bufExplorerSortBy = "name"
+" map <leader>o :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow=1
-
-let g:bufExplorerSortBy = "name"
+"let g:miniBufExplModSelTarget = 1
+"let g:miniBufExplorerMoreThanOne = 100
+"let g:miniBufExplModSelTarget = 0
+"let g:miniBufExplUseSingleClick = 1
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplVSplit = 25
+"let g:miniBufExplSplitBelow=1
 
 " 如果需要自动打开，请去掉下面的注释
 "autocmd BufRead,BufNew :call UMiniBufExplorer
 
-map <leader>u :TMiniBufExplorer<cr>
-
+"map <leader>u :TMiniBufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni plugin complete functions
@@ -515,7 +511,7 @@ autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml        set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php        set omnifunc=phpcomplete#CompletePHP
 
-set dictionary-=~/.vim_runtime/doc/phpfunclist.txt dictionary+=~/.vim_runtime/doc/phpfunclist.txt
+set dictionary-=~/.vim/doc/phpfunclist.txt dictionary+=~/.vim/doc/phpfunclist.txt
 set complete-=k complete+=k
 
 let g:SuperTabRetainCompletionType = 1
@@ -526,7 +522,7 @@ let g:SuperTabDefaultCompletionType = "<C-N>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let Tlist_Auto_Highlight_Tag = 1
 if !exists( 'Tlist_Auto_Open')
-    let Tlist_Auto_Open = 1
+    let Tlist_Auto_Open = 0
 endif
 let Tlist_Auto_Update = 1
 let Tlist_Close_On_Select = 0
@@ -612,8 +608,18 @@ endfunction
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
+let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*' " For Unix
+"let MRU_Exclude_Files = '^c:\\temp\\.*' " For MS-Windows
+let MRU_File = expand('~/.vim/tempfiledir/vim_mru_files')
+let MRU_Max_Entries = 100
 map <leader>f :MRU<CR>
+
+""""""""""""""""""""""""""""""
+" => winManager plugin        
+""""""""""""""""""""""""""""""
+let g:winManagerWindowLayout = "FileExplorer|TagList|BufExplorer"
+let g:winManagerWidth = 30
+nmap <silent> <F6> :WMToggle<CR>
 
 """"""""""""""""""""""""""""""
 " => Other plugin
@@ -633,7 +639,7 @@ noremap <leader>y :CommandTFlush<cr>
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn .git generated'
 set grepprg=/bin/grep\ -nH
 
 
