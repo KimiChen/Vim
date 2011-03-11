@@ -195,7 +195,7 @@ endtry
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 插入模式里: 插入 <Tab> 时使用合适数量的空格
-set expandtab
+" set expandtab
 
 " 缩进每一步使用的空白数目
 set shiftwidth=4
@@ -204,7 +204,7 @@ set shiftwidth=4
 set tabstop=4
 
 " 行首的 <Tab> 根据 'shiftwidth' 插入空白''
-set smarttab
+" set smarttab
 
 " Vim在合适的地方折行
 set linebreak
@@ -331,6 +331,7 @@ map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
+" 窗口分割时,进行切换的按键热键需要连接两次，比如从下方窗口移动光标到上方窗口，需要<c-w><c-w>k，现在重映射为<c-k>，切换的时候会变得非常方便。
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
@@ -512,6 +513,13 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html       set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css        set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml        set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php        set omnifunc=phpcomplete#CompletePHP
+
+set dictionary-=~/.vim_runtime/doc/phpfunclist.txt dictionary+=~/.vim_runtime/doc/phpfunclist.txt
+set complete-=k complete+=k
+
+let g:SuperTabRetainCompletionType = 1
+let g:SuperTabDefaultCompletionType = "<C-N>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taglist plugin 
