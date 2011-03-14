@@ -11,6 +11,7 @@ cd ..
 rm -Rf ./ctags-5.8*
 sudo cp /usr/local/bin/ctags /usr/bin/ctags
 
+sh ~/.vim/install.sh mac
 
 
 git clone git@github.com:KimiChen/Vim.git .vim/
