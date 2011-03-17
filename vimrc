@@ -142,7 +142,7 @@ if has("gui_running")
 else
   colorscheme zellner
   set background=dark
-  set nonu
+  set nu
 endif
 
 try
