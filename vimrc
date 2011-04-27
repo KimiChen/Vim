@@ -36,10 +36,6 @@ nmap <leader>w :w!<cr>
 " 设置快速退出快捷键为 ,q
 nmap <leader>q :q<cr>
 
-" Fast Tabnew
-" 设置快速开启新tab快捷键为 ,t
-nmap <leader>t :tabnew<cr>
-
 " Fast editing of the .vimrc
 " 设置快读编辑vimrc文件的快捷键为 ,ee
 map <leader>ee :e! ~/.vim/vimrc<cr>
