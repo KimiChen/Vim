@@ -128,12 +128,12 @@ syntax enable
 " Set font according to system
 " 根据系统设置字体
 if MySys() == "mac"
-  set gfn=Menlo:h14
+  set gfn=Menlo:h12
   set shell=/bin/bash
 elseif MySys() == "windows"
   set gfn=Bitstream\ Vera\ Sans\ Mono:h10
 elseif MySys() == "linux"
-  set gfn=Monospace\ 10
+  set gfn=Monospace\ 9 
   set shell=/bin/bash
 endif
 
