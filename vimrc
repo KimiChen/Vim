@@ -197,6 +197,10 @@ endtry
 " => Text, tab and indent related
 " 文本、tab、缩进设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 切换是否进入粘贴模式
+map <leader>fp :set paste<cr>
+map <leader>fi :set nopaste<cr>
+
 
 " 插入模式里: 插入 <Tab> 时使用合适数量的空格
 " set expandtab
@@ -411,7 +415,6 @@ function! HasPaste()
     endif
 endfunction
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket expanding
 " 括号等
@@ -563,6 +566,111 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"C语言编译
+"设置编译映射为",c"就是在正常模式下输入‘,c'便可编译程序
+"设置运行映射为’,r‘就是在正常模式下输入’,r‘便可运行已编译好的程序
+"设置编译并运行的映射为’,a‘
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nmap <leader>c :call CompileC()<CR>
+" map <leader>a :call CompileRunC()<CR>
+" map <leader>r :call RunC()<CR>
+
+function CompileC()
+    exec "w"
+    set makeprg=gcc\ -Wall\ %:p\ -o\ %:r "
+    exec "make" 
+    exec "copen"
+endfunction
+ 
+"function RunC()
+"    let s:path=exec "pwd"
+"    exec "!./%<"
+"endfunction
+ 
+"function CompileRunC()
+"exec "w"
+"exec "!clear"
+"exec "!gcc % -o -%:r"
+"exec "!./-%<"
+"endfunction
+
+
+"单个文件编译
+map <F5> :call Do_OneFileMake()<CR>
+function Do_OneFileMake()
+    if expand("%:p:h")!=getcwd()
+        echohl WarningMsg | echo "Fail to make! This file is not in the current dir! Press <F7> to redirect to the dir of this file." | echohl None
+        return
+    endif
+    let sourcefileename=expand("%:t")
+    if (sourcefileename=="" || (&filetype!="cpp" && &filetype!="c"))
+        echohl WarningMsg | echo "Fail to make! Please select the right file!" | echohl None
+        return
+    endif
+    let deletedspacefilename=substitute(sourcefileename,' ','','g')
+    if strlen(deletedspacefilename)!=strlen(sourcefileename)
+        echohl WarningMsg | echo "Fail to make! Please delete the spaces in the filename!" | echohl None
+        return
+    endif
+    if &filetype=="c"
+        if MySys() == "windows"
+            set makeprg=gcc\ -o\ %<.exe\ %
+        else
+            set makeprg=gcc\ -o\ %<\ %
+        endif
+    elseif &filetype=="cpp"
+        if MySys() == "windows"
+            set makeprg=g++\ -o\ %<.exe\ %
+        else
+            set makeprg=g++\ -o\ %<\ %
+        endif
+        "elseif &filetype=="cs"
+        "set makeprg=csc\ \/nologo\ \/out:%<.exe\ %
+    endif
+    if(MySys() == "windows")
+        let outfilename=substitute(sourcefileename,'\(\.[^.]*\)' ,'.exe','g')
+        let toexename=outfilename
+    else
+        let outfilename=substitute(sourcefileename,'\(\.[^.]*\)' ,'','g')
+        let toexename=outfilename
+    endif
+    if filereadable(outfilename)
+        if(MySys() == "windows")
+            let outdeletedsuccess=delete(getcwd()."\\".outfilename)
+        else
+            let outdeletedsuccess=delete("./".outfilename)
+        endif
+        if(outdeletedsuccess!=0)
+            set makeprg=make
+            echohl WarningMsg | echo "Fail to make! I cannot delete the ".outfilename | echohl None
+            return
+        endif
+    endif
+    execute "silent make"
+    set makeprg=make
+    execute "normal :"
+    if filereadable(outfilename)
+        if(MySys() == "windows")
+            execute "!".toexename
+        else
+            execute "!./".toexename
+        endif
+    else
+        execute "copen"
+        redraw!
+    endif
+endfunction
+"进行make的设置
+"map <F6> :call Do_make()<CR>
+"map <c-F6> :silent make clean<CR>
+"function Do_make()
+"    set makeprg=make
+"    execute "silent make"
+"    execute "copen"
+"endfunction
 
 
 """"""""""""""""""""""""""""""
