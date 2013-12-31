@@ -15,8 +15,13 @@ sh ~/.vim/install.sh mac
 
 
 git clone git@github.com:KimiChen/Vim.git .vim/
-git config --global user.name "Kimi"
+git config --global user.name "KimiChen"
 git config --global user.email "jianxieshui|*|gmail.com"
 git remote add origin git@github.com:KimiChen/Vim.git
 git pull git@github.com:KimiChen/Vim.git
 git push origin master
+
+
+
+git config user.name "KimiChen"
+git config user.email "jianxieshui@gmail.com"
