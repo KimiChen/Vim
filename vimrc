@@ -403,7 +403,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ 
 
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+    let curdir = substitute(getcwd(), '/Users/kimi/', "~/", "g")
     return curdir
 endfunction
 
@@ -727,11 +727,18 @@ let MRU_Max_Entries = 100
 map <leader>f :MRU<CR>
 
 """"""""""""""""""""""""""""""
-" => winManager plugin        
+" => winManaged plugin        
 """"""""""""""""""""""""""""""
 let g:winManagerWindowLayout = "FileExplorer|TagList|BufExplorer"
 let g:winManagerWidth = 30
 nmap <silent> <F6> :WMToggle<CR>
+
+""""""""""""""""""""""""""""""
+" =>  NerdTree plugin        
+""""""""""""""""""""""""""""""
+map <leader>fo :NERDTreeToggle<CR>
+nnoremap f :NERDTreeToggle<CR>
+
 
 """"""""""""""""""""""""""""""
 " => Other plugin
