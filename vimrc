@@ -737,7 +737,7 @@ nmap <silent> <F6> :WMToggle<CR>
 " =>  NerdTree plugin        
 """"""""""""""""""""""""""""""
 map <leader>fo :NERDTreeToggle<CR>
-nnoremap f :NERDTreeToggle<CR>
+"nnoremap f :NERDTreeToggle<CR>
 
 
 """"""""""""""""""""""""""""""
